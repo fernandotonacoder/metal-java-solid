@@ -20,7 +20,7 @@ public class Player1 extends SpaceShip implements KeyboardHandler {
     }
 
     /**
-     * Player 1 movement , up para cima, down para baixo, left para esquerda, right para a direita, M disparar.
+     * Player 1 movement, Arrow Up, Arrow Down, Arrow Left, Arrow Right, M to Shoot.
      */
     private void keyboardInit(){
         Keyboard keyboard = new Keyboard(this);

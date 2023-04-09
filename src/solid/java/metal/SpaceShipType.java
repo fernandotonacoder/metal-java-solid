@@ -1,7 +1,7 @@
 package solid.java.metal;
 
 /**
- * Enum com os tipos de naves do jogo!
+ * This Enum contains the spaceships available in the game
  */
 public enum SpaceShipType {
 

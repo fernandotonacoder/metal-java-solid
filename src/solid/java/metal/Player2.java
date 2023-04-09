@@ -20,7 +20,7 @@ public class Player2 extends SpaceShip implements KeyboardHandler {
 
     /**
      * TODO Doc
-     * Player 2 movements: A esquerda, S baixo, D direita, W cima, R disparar
+     * Player 2 movements: A to Left, S to Down, D to Right, W to Up, R to Shoot
      */
     private void keyboardInit(){
         Keyboard keyboard = new Keyboard(this);

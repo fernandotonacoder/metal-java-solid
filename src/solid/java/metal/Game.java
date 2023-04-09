@@ -38,9 +38,9 @@ public class Game {
     public void moveBullets(int direction) {
         for (int i = 0; i < player_1.getBulletsList().size(); i++) {
             Bullets bullet = player_1.getBulletsList().get(i);
-            Boolean checkColision = collisionDetector(bullet);
+            Boolean checkCollision = collisionDetector(bullet);
 
-            if(checkColision == true){
+            if(checkCollision == true){
                 this.player_1.getBulletsList().remove(bullet);
                 bullet.removeBullet();
                 this.player_2.hit();
@@ -77,9 +77,9 @@ public class Game {
     public void moveBullets2(int direction) {
         for (int i = 0; i < player_2.getBulletsList().size(); i++) {
             Bullets bullet2 = player_2.getBulletsList().get(i);
-            Boolean checkColision = collisionDetector2(bullet2);
+            Boolean checkCollision = collisionDetector2(bullet2);
 
-            if(checkColision == true){
+            if(checkCollision == true){
                 this.player_2.getBulletsList().remove(bullet2);
                 bullet2.removeBullet();
                 this.player_1.hit();
