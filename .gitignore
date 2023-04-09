@@ -23,7 +23,8 @@
 hs_err_pid*
 
 # ignore /out folder
-
-
-!lib/simplegraphics.jar
 /out/
+
+# Include simplegraphics.jar external library
+!lib/simplegraphics.jar
+
