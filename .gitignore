@@ -23,4 +23,5 @@
 hs_err_pid*
 
 # ignore /out folder
-/out*
+out/
+!lib/simplegraphics.jar
