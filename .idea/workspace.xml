@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e381a77b-a4bf-4c18-b3de-9d61dc22c751" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lasergun.wav" beforeDir="false" afterPath="$PROJECT_DIR$/resources/LaserWeapon.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solid/java/metal/AvailableSpaceshipsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solid/java/metal/AvailableSpaceshipsMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solid/java/metal/Bullets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solid/java/metal/Bullets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solid/java/metal/ButtonCommandsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solid/java/metal/ButtonCommandsMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solid/java/metal/FinalMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solid/java/metal/FinalMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solid/java/metal/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solid/java/metal/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solid/java/metal/GameRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solid/java/metal/GameRectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solid/java/metal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solid/java/metal/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solid/java/metal/Player1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solid/java/metal/Player1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solid/java/metal/Player2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solid/java/metal/Player2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solid/java/metal/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solid/java/metal/Sound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solid/java/metal/SpaceShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solid/java/metal/SpaceShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solid/java/metal/SpaceShipType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solid/java/metal/SpaceShipType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solid/java/metal/StartMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solid/java/metal/StartMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +33,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubPullRequestsUISettings">
@@ -21,20 +48,41 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2Ej20mnqt0ys5jurKAdp5d4qspl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "code-cleaning",
+    "last_opened_file_path": "/home/fernandotona/Dev/metal-java-solid",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="solid.java.metal" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">

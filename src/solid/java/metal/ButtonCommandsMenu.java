@@ -19,25 +19,21 @@ public class ButtonCommandsMenu implements KeyboardHandler {
         spaceKeyPressed.setKey(KeyboardEvent.KEY_SPACE);
         spaceKeyPressed.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         keyboard.addEventListener(spaceKeyPressed);
-
     }
 
     public void init() {
-        //Sound sound = new Sound("background5.wav");
+        //var sound = new Sound("background5.wav");
         //sound.play();
         commandsMenu = new Picture(10, 10, "resources/orangeSunriseSpaceshipButtonCommands.png");
         commandsMenu.draw();
         keyboardInit();
     }
 
-
     public void availableSpaceshipsMenu () {
         commandsMenu.delete();
-       AvailableSpaceshipsMenu availableSpaceshipsMenu = new AvailableSpaceshipsMenu();
-       availableSpaceshipsMenu.init();
+        AvailableSpaceshipsMenu availableSpaceshipsMenu = new AvailableSpaceshipsMenu();
+        availableSpaceshipsMenu.init();
     }
-
-
 
     @Override
     public void keyPressed(KeyboardEvent keyboardEvent) {

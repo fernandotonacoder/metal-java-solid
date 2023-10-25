@@ -91,24 +91,27 @@ public class Player2 extends SpaceShip implements KeyboardHandler {
         }
 
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_V) {
-            Runnable task = () -> {
-                Bullets bullets = new Bullets(super.getDamage(), this.getX(), this.getY());
-                while (bullets.getY() > 10 && bullets.getY() <= 620) {
-                    try {
-                        Thread.sleep(40);
-                        bullets.bulletMovement(40);
-                        game.collisionDetector2(bullets);
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
-                }
-                // remover bullet
-                bullets.removeBullet();
-                bullets = null;
-            };
-            Thread thread = new Thread(task);
+            Thread thread = getThread();
             thread.start();
         }
+    }
+
+    private Thread getThread() {
+        Runnable task = () -> {
+            Bullets bullets = new Bullets(this.getX(), this.getY());
+            while (bullets.getY() > 10 && bullets.getY() <= 620) {
+                try {
+                    Thread.sleep(40);
+                    bullets.bulletMovement(40);
+                    game.collisionDetector2(bullets);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            // remover bullet
+            bullets.removeBullet();
+        };
+        return new Thread(task);
     }
 
     @Override
