@@ -23,7 +23,7 @@ public class AvailableSpaceshipsMenu implements KeyboardHandler {
     }
 
     public void init() {
-        spaceshipsMenu = new Picture(10 , 10 , "resources/availableSpaceshipsMenu.png");
+        spaceshipsMenu = new Picture(10, 10, "resources/availableSpaceshipsMenu.png");
         spaceshipsMenu.draw();
         keyboardInit();
     }
@@ -32,8 +32,6 @@ public class AvailableSpaceshipsMenu implements KeyboardHandler {
         spaceshipsMenu.delete();
         Game game = new Game();
         game.init();
-
-
     }
 
     @Override
@@ -46,7 +44,7 @@ public class AvailableSpaceshipsMenu implements KeyboardHandler {
                 e.printStackTrace();
             }
         }
-        }
+    }
 
     @Override
     public void keyReleased(KeyboardEvent keyboardEvent) {

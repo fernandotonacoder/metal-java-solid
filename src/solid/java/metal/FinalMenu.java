@@ -6,7 +6,7 @@ import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
-public class FinalMenu implements KeyboardHandler{
+public class FinalMenu implements KeyboardHandler {
 
     private Picture player1wins;
     private boolean player1won;
@@ -25,39 +25,36 @@ public class FinalMenu implements KeyboardHandler{
 
     }
 
-
     public void showPlayer1Wins() {
         keyboardInit();
-        player1wins = new Picture(10,10,"resources/player1wins.png");
+        player1wins = new Picture(10, 10, "resources/player1wins.png");
         player1wins.draw();
         player1won = true;
     }
 
     public void showPlayer2Wins() {
         keyboardInit();
-        player2wins = new Picture(10,10,"resources/player2wins.png");
+        player2wins = new Picture(10, 10, "resources/player2wins.png");
         player2wins.draw();
         player2won = true;
     }
 
     private void restartGame() throws InterruptedException {
-        if (player1won == true) {
+        if (player1won) {
             player1wins.delete();
             StartMenu restartGame = new StartMenu();
             restartGame.init();
         }
-        if (player2won == true) {
+        if (player2won) {
             player2wins.delete();
             StartMenu restartGame = new StartMenu();
             restartGame.init();
-
         }
     }
 
     @Override
     public void keyPressed(KeyboardEvent keyboardEvent) {
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_SPACE) {
-
             try {
                 restartGame();
             } catch (InterruptedException e) {

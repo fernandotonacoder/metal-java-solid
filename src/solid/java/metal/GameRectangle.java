@@ -12,9 +12,6 @@ public class GameRectangle  {
     public int width;
     public int height;
 
-    private Rectangle rectangle;
-    private Picture picture;
-
     public GameRectangle(int x, int y, int width, int height){
         this.x=x;
         this.y=y;
@@ -25,23 +22,5 @@ public class GameRectangle  {
         rectangle.draw();
         Picture picture = new Picture(10,10,"resources/background.jpeg");
         picture.draw();
-
-    }
-
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public int getHeight() {
-        return height;
     }
 }

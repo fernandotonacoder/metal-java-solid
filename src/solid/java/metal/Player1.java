@@ -58,7 +58,6 @@ public class Player1 extends SpaceShip implements KeyboardHandler {
     /**
      * TODO Doc, adicionar setX e setY para atualizar posição da nave, atualmente atualiza só a imagem, relativamente às colisões
      * Mudar as teclas para key Released !
-     * @param keyboardEvent
      */
     public void keyPressed(KeyboardEvent keyboardEvent) {
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_LEFT) {
@@ -101,25 +100,28 @@ public class Player1 extends SpaceShip implements KeyboardHandler {
         }
 
         if (keyboardEvent.getKey() == KeyboardEvent.KEY_M){
-            Runnable task = () -> {
-                Bullets bullets = new Bullets(super.getDamage(), this.getX(), this.getY());
-                while (bullets.getY() > 10) {
-                    try {
-                        Thread.sleep(40);
-                        bullets.bulletMovement(-40);
-                        game.collisionDetector(bullets);
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
-                }
-                // remover bullet
-                bullets.removeBullet();
-                bullets = null;
-            };
-            Thread thread = new Thread(task);
+            Thread thread = getThread();
             thread.start();
         }
 
+    }
+
+    private Thread getThread() {
+        Runnable task = () -> {
+            Bullets bullets = new Bullets(this.getX(), this.getY());
+            while (bullets.getY() > 10) {
+                try {
+                    Thread.sleep(40);
+                    bullets.bulletMovement(-40);
+                    game.collisionDetector1(bullets);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            // remover bullet
+            bullets.removeBullet();
+        };
+        return new Thread(task);
     }
 
     @Override

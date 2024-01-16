@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.net.URL;
 
 
-
 public class Sound {
 
     private Clip clip;
@@ -18,6 +17,7 @@ public class Sound {
 
     /**
      * Plays the clip from the point it was stopped or from start if passed with the fromStart argument false or true
+     *
      * @param fromStart should be true if want to replay the sound from the start or false otherwise
      */
     public void play(boolean fromStart) {
@@ -102,7 +102,7 @@ public class Sound {
     public Sound() {
 
         soundURL[0] = getClass().getResource("/Sounds/death.wav");
-        soundURL[1] = getClass().getResource("/Sounds/lasergun.wav");
+        soundURL[1] = getClass().getResource("/Sounds/LaserWeapon.wav");
         soundURL[2] = getClass().getResource("/Sounds/background2.wav");
         soundURL[3] = getClass().getResource("/Sounds/hit.wav");
         soundURL[4] = getClass().getResource("/Sounds/win2.wav");
